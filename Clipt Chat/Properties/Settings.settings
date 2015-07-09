@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Clipt_Chat.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Server" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://clipt.azurewebsites.net</Value>
+    </Setting>
+    <Setting Name="Room" Type="System.String" Scope="User">
+      <Value Profile="(Default)">clipt-welcome</Value>
+    </Setting>
+    <Setting Name="User" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Guest</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
