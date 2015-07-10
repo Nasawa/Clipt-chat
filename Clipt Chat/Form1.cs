@@ -51,7 +51,7 @@ namespace Clipt_Chat
                 {
                     socket.Emit(E(strings.msg), id, string.Format("{0}: {1} {2} #{3}", E(strings.global), user, E(strings.joined), id));
                 });
-                socket.On(E(strings.id), (sid) =>
+                socket.Once(E(strings.id), () =>
                 {
                     socket.On(id + "", (msg) =>
                     {
