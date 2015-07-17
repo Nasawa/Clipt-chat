@@ -79,6 +79,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="bin\Release\Clipt Chat.exe.config" />
+    <None Include="bin\Release\Clipt Chat.vshost.exe.config" />
+    <None Include="bin\Release\Clipt Chat.vshost.exe.manifest" />
+    <None Include="bin\Release\Clipt Chat.zip" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Clipt_Chat.Properties.Resources.datasource" />
     <None Include="Properties\DataSources\Clipt_Chat.Properties.Settings.datasource" />
@@ -94,6 +98,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Release\Clipt Chat.exe" />
+    <Content Include="bin\Release\Clipt Chat.pdb" />
+    <Content Include="bin\Release\Clipt Chat.vshost.exe" />
+    <Content Include="bin\Release\EngineIoClientDotNet.dll" />
+    <Content Include="bin\Release\Newtonsoft.Json.dll" />
+    <Content Include="bin\Release\Newtonsoft.Json.xml" />
+    <Content Include="bin\Release\SocketIoClientDotNet.dll" />
+    <Content Include="bin\Release\WebSocket4Net.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
