@@ -1,6 +1,7 @@
 ﻿using Quobject.SocketIoClientDotNet.Client;
 using System;
 using System.Media;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace Clipt_Chat
@@ -8,11 +9,12 @@ namespace Clipt_Chat
     public partial class ChatWindow : Form
     {
         private string[] arr = { "Connect", "Disconnect", "http://", "Chat", "GLOBAL", "has joined the chat on", "id", "message", "Disconnected from server" };
-        private string id = null;
+        private string id, user;
 
         private Socket socket = null;
 
-        private string user = null;
+        [DllImport("user32.dll")]
+        static extern bool FlashWindow(IntPtr hwnd, bool bInvert);
         public ChatWindow()
         {
             InitializeComponent();
@@ -118,6 +120,7 @@ namespace Clipt_Chat
             {
                 this.chatOutput.AppendText(log + "\n");
                 this.chatOutput.ScrollToCaret();
+                FlashWindow(this.Handle, true);
             }
         }
     }
