@@ -123,5 +123,11 @@ namespace Clipt_Chat
                 FlashWindow(this.Handle, true);
             }
         }
+
+        private void chatOutput_LinkClicked(object sender, LinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(e.LinkText);
+            chatInput.Focus();
+        }
     }
 }

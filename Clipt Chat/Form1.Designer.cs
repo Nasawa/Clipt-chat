@@ -44,7 +44,7 @@
             // 
             this.textServer.Location = new System.Drawing.Point(12, 25);
             this.textServer.Name = "textServer";
-            this.textServer.Size = new System.Drawing.Size(203, 20);
+            this.textServer.Size = new System.Drawing.Size(187, 20);
             this.textServer.TabIndex = 0;
             // 
             // label1
@@ -59,7 +59,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(221, 9);
+            this.label2.Location = new System.Drawing.Point(205, 10);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 3;
@@ -67,7 +67,7 @@
             // 
             // textRoom
             // 
-            this.textRoom.Location = new System.Drawing.Point(221, 25);
+            this.textRoom.Location = new System.Drawing.Point(205, 26);
             this.textRoom.Name = "textRoom";
             this.textRoom.Size = new System.Drawing.Size(90, 20);
             this.textRoom.TabIndex = 1;
@@ -75,9 +75,9 @@
             // btnConnect
             // 
             this.btnConnect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnConnect.Location = new System.Drawing.Point(408, 25);
+            this.btnConnect.Location = new System.Drawing.Point(395, 25);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(64, 20);
+            this.btnConnect.Size = new System.Drawing.Size(77, 20);
             this.btnConnect.TabIndex = 3;
             this.btnConnect.Text = "Connect";
             this.btnConnect.UseVisualStyleBackColor = true;
@@ -93,6 +93,7 @@
             this.chatOutput.Size = new System.Drawing.Size(460, 197);
             this.chatOutput.TabIndex = 5;
             this.chatOutput.Text = "";
+            this.chatOutput.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.chatOutput_LinkClicked);
             // 
             // chatInput
             // 
@@ -117,7 +118,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(315, 9);
+            this.label3.Location = new System.Drawing.Point(299, 10);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 13);
             this.label3.TabIndex = 9;
@@ -125,7 +126,7 @@
             // 
             // textUser
             // 
-            this.textUser.Location = new System.Drawing.Point(315, 25);
+            this.textUser.Location = new System.Drawing.Point(299, 26);
             this.textUser.Name = "textUser";
             this.textUser.Size = new System.Drawing.Size(90, 20);
             this.textUser.TabIndex = 2;
